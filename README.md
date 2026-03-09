@@ -48,6 +48,6 @@ Then open the local server URL in your browser.
 
 ## Contact
 
-* Portfolio: (add your portfolio link)
-* LinkedIn: (add your LinkedIn profile)
-* Email: (add your email)
+* Portfolio:in progresss....
+* LinkedIn: https://www.linkedin.com/in/tanmay-bhamare/
+* Email: tanmaybhamare99@gmail.com
