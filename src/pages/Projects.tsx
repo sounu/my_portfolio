@@ -57,21 +57,23 @@ const techIcons: { [key: string]: JSX.Element } = {
   'Tailwind CSS': <SiCss3 />,
   'Bootstrap': <SiCss3 />,
   'JQuery': <SiJquery />,
+
+
 };
 
 
 const Projects: React.FC = () => {
   const [projects, setProjects] = useState<Project[]>([])
-  
-  useEffect(() => { 
+
+  useEffect(() => {
     async function fetchProjects() {
       const data = await getProjects();
       setProjects(data);
     }
-    
+
     fetchProjects()
   }, [])
-  
+
   if (projects.length === 0) return <div>Loading...</div>;
 
   return (
