@@ -42,7 +42,7 @@ const ContactMe: React.FC = () => {
         </div>
       </div>
       <div className="contact-header">
-        <p>I'm always up for a chat or a coffee! Feel free to reach out.</p>
+        <p>Let’s build something together! Feel free to reach out.</p>
       </div>
       <div className="contact-details">
         <div className="contact-item">
