@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { FaHome, FaBriefcase, FaTools, FaProjectDiagram, FaEnvelope } from 'react-icons/fa'; // Import icons
+import { FaHome, FaTools, FaProjectDiagram, FaEnvelope } from 'react-icons/fa';
 import './Navbar.css';
 import netflixLogo from '../images/logo-2.png';
 import blueImage from '../images/blue.png';
@@ -38,14 +38,12 @@ const Navbar: React.FC = () => {
           </Link>
           <ul className="navbar-links">
             <li><Link to="/browse">Home</Link></li>
-            {/* <li><Link to="/work-experience">Professional</Link></li> */}
             <li><Link to="/skills">Skills</Link></li>
             <li><Link to="/projects">Projects</Link></li>
             <li><Link to="/contact-me">Hire Me</Link></li>
           </ul>
         </div>
         <div className="navbar-right">
-          {/* Hamburger menu for mobile */}
           <div className="hamburger" onClick={toggleSidebar}>
             <div></div>
             <div></div>
@@ -55,17 +53,14 @@ const Navbar: React.FC = () => {
         </div>
       </nav>
 
-      {/* Sidebar Overlay */}
       <div className={`sidebar-overlay ${isSidebarOpen ? 'open' : ''}`} onClick={closeSidebar}></div>
 
-      {/* Sidebar (only visible on mobile) */}
       <div className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
         <div className="sidebar-logo">
           <img src={netflixLogo} alt="Netflix Logo" />
         </div>
         <ul>
           <li><Link to="/browse" onClick={closeSidebar}><FaHome /> Home</Link></li>
-          {/* <li><Link to="/work-experience" onClick={closeSidebar}><FaBriefcase /> Professional</Link></li> */}
           <li><Link to="/skills" onClick={closeSidebar}><FaTools /> Skills</Link></li>
           <li><Link to="/projects" onClick={closeSidebar}><FaProjectDiagram /> Projects</Link></li>
           <li><Link to="/contact-me" onClick={closeSidebar}><FaEnvelope /> Hire Me</Link></li>
